@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 98vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#fullApp {
+  width: 100%;
+  display: flex;
+}
+#form-container {
+  width: 40%;
+  padding: 20px;
+}
+#cv-container {
+  width: 60%;
+  padding: 20px;
+}
+
+/* General Information Form */
+#contact-form-container {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #22092c;
+  margin-bottom: 10px;
+}
+
+#contact-form-container label {
+  font-size: 20px;
+}
+.full-name input,
+.e-mail input,
+.phone-number input {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Education Information Form */
+#education-form-container {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #22092c;
+  margin-bottom: 10px;
+}
+#education-form-container label {
+  font-size: 20px;
+}
+.school-name input,
+.study-title input {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.add {
+  padding: 5px 30px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.education-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #22092c;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.education-list-title i {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d80032;
+  cursor: pointer;
+}
+
+/* Experience Information Form */
+#experience-form-container {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #22092c;
+  margin-bottom: 10px;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+#experience-form-container label {
+  font-size: 20px;
+}
+.company-name input,
+.position-title input,
+.position-description textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.position-description textarea {
+  resize: none;
+}
+.start-end {
+  display: flex;
+  width: 100%;
+}
+.start-year,
+.end-year {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.start-year input,
+.end-year input {
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.experience-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #22092c;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.experience-list-title i {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d80032;
+  cursor: pointer;
+}
+
+/* CV Format */
+.resume-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.resume-section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.resume-section:nth-child(1) h2 {
+  color: white;
+}
+.resume-section p strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+#general-info {
+  background-color: #007bff;
+  color: #fff;
+}
+#education,
+#practical-experience {
+  border: 2px solid #007bff;
+}
+#education div,
+#practical-experience div {
+  margin-bottom: 15px;
+}
+#education div:last-of-type,
+#practical-experience div:last-of-type {
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #22092c;
+}
+
+@media only screen and (max-width: 768px) {
+  #fullApp {
+    flex-direction: column;
+  }
+  #form-container {
+    width: 100%;
+  }
+  #cv-container {
+    width: 100%;
+  }
+}
