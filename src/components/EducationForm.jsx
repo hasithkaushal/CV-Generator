@@ -110,7 +110,7 @@ export default function EducationForm({ onChildChange }) {
   return (
     <div id="education-form-container">
       <h2 style={{ cursor: "pointer" }} onClick={() => viewForm()}>
-        EDUCATION INFORMATION
+        EDUCATION INFORMATIONs
       </h2>
       <div style={{ display: EducationForm ? "block" : "none" }}>
         <form className="form-inputs" onSubmit={(event) => addEducation(event)}>
